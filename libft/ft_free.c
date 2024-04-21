@@ -28,4 +28,5 @@ void	ft_free(enum e_freeable which, ...)
 			ft_arena_destroy(va_arg(ap, struct s_arena *));
 		w = va_arg(ap, enum e_freeable);
 	}
+	va_end(ap);
 }
